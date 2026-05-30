@@ -1,0 +1,52 @@
+# Virtual environment
+rf_env/
+venv/
+.venv/
+env/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+
+# Dataset — too large for GitHub (111 MB). Regenerate with:
+#   python data/generate_otfl301v2.py
+data/*.pkl
+data/*.csv
+
+# Legacy / archive datasets
+data/archive/
+
+# Archive checkpoints and figures
+results/archive/
+results/figures/archive/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Claude Code local settings
+.claude/
+
+# Logs
+*.log
+/tmp/
+
+# Large model checkpoints from legacy runs (active ones committed explicitly)
+# Uncomment if you want to exclude all .pt files:
+# results/*.pt
